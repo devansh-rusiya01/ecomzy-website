@@ -14,7 +14,8 @@ const Cart = () => {
     setTotalAmount(cart.reduce((acc,curr)=>acc + curr.price,0));
   },[cart])
   return (
-    <div>
+    <div className="flex ">
+      <div >
      {
       cart.length > 0 ?
       (<div>
@@ -55,6 +56,7 @@ const Cart = () => {
         </Link>
       </div>)
      }
+    </div>
     </div>
   );
 };

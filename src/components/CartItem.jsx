@@ -9,15 +9,15 @@ const CartItem = ({item,itemIndex}) => {
     toast.success("Item removed");
   }
   return (
-    <div>
-      <div>
-        <div>
-          <img src={item.image}/>
+    <div className="flex ">
+      <div className="items-center justify-between max-w-[450px]">
+        <div className="h-[180px] ">
+          <img src={item.image}  className="h-full w-full "/>
         </div>
 
 
         <div>
-          <h1>{item.title}</h1>
+          <h1 className="text-gray-700 font-semibold text-lg text-left truncate w-40 mt-1">{item.title}</h1>
           <h1>{item.description}</h1>
         </div>
         <div>
